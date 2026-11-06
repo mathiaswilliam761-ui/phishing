@@ -1,5 +1,7 @@
 # EWB Phishing URL Awareness Checker
 
+[![CI / Automated Testing](https://github.com/mathiaswilliam761-ui/phishing/actions/workflows/ci.yml/badge.svg)](https://github.com/mathiaswilliam761-ui/phishing/actions/workflows/ci.yml)
+
 ## Overview
 Phishing is a social engineering attack where malicious actors deceive victims into revealing sensitive credentials, financial details, or one-time passwords through deceptive links. This tool is a defensive, lightweight Python command-line utility designed to raise cybersecurity awareness by inspecting the plain text of a URL for visible structural warning signs. It operates completely offline and strictly on text without ever visiting or contacting the destination server.
 
