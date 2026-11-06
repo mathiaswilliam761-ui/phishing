@@ -13,6 +13,7 @@ Phishing is a social engineering attack where malicious actors deceive victims i
 - **Interactive Session Loop (Improvement A)**: Allows evaluating multiple URLs in succession without restarting the program, exiting on `q` or `quit`.
 - **Warning Count & Summary Notice (Improvement B)**: Distinguishes between informational notices and real risks, printing a clear `REVIEW CAREFULLY: X warning sign(s) found` summary.
 - **Resilient Exception Handling (Improvement C)**: Employs safe parsing with `try...except ValueError` to prevent crashes when malformed URLs (e.g., `http://[bad`) are input.
+- **Interactive Web Interface & GitHub Pages Deployment**: Includes a client-side web application in `web/index.html` deployable via GitHub Actions.
 
 ## Requirements
 - Python 3.10 or later
@@ -34,6 +35,12 @@ python3 phishing_checker.py
 ### Automated Unit Tests
 ```bash
 python -m unittest discover -s tests -v
+```
+
+### Live Interactive Web Demo
+Open `web/index.html` in any web browser, or access the live hosted version on GitHub Pages after deployment:
+```text
+https://<YOUR-USERNAME>.github.io/phishing-url-awareness/
 ```
 
 ## Example Output
@@ -91,9 +98,9 @@ The project was evaluated against the standardized workbook test dataset and add
    - **Why**: Prevents Python from crashing when given invalid URL syntax such as malformed IPv6 brackets (`http://[bad`).
    - **How tested**: Verified with `http://[bad` and confirmed program handles the error gracefully without terminating.
 
-4. **Continuous Integration via GitHub Actions**:
-   - **What changed**: Configured multi-OS, multi-version Python testing workflow (`.github/workflows/ci.yml`).
-   - **Why**: Guarantees cross-platform reliability on Windows and Linux across Python 3.10 through 3.13 on every push and pull request.
+4. **Continuous Integration & Automated Deployment via GitHub Actions**:
+   - **What changed**: Configured multi-OS, multi-version Python testing workflow (`.github/workflows/ci.yml`) with manual `workflow_dispatch` trigger and automated deployment to GitHub Pages.
+   - **Why**: Guarantees cross-platform reliability on Windows and Linux across Python 3.10 through 3.13, allows running checks directly from GitHub without installing Python, and hosts the web interface for demonstration.
    - **How tested**: Validated locally with `unittest` suite passing 9/9 test cases.
 
 ## Limitations
@@ -104,4 +111,3 @@ This project is intended strictly for educational and defensive cybersecurity aw
 
 ## Author
 Student Developer, Cybersecurity Mini Project, EWB Courses
-
