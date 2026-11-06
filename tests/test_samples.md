@@ -1,6 +1,6 @@
 # Test Results
 
-Python version used: 3.13.14 | Operating system: Windows 11 | Date: 2026-11-06
+Tester: Mathias William (@mathiaswilliam761-ui) | Python version used: 3.13.14 | Operating system: Windows 11 | Date: 2026-11-06
 
 | # | Input | Expected result | Actual result | Pass/Fail |
 |---|-------|-----------------|---------------|-----------|

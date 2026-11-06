@@ -38,9 +38,9 @@ python -m unittest discover -s tests -v
 ```
 
 ### Live Interactive Web Demo
-Open `web/index.html` in any web browser, or access the live hosted version on GitHub Pages after deployment:
+Open `web/index.html` in any web browser, or access the live hosted version on GitHub Pages:
 ```text
-https://<YOUR-USERNAME>.github.io/phishing-url-awareness/
+https://mathiaswilliam761-ui.github.io/phishing/
 ```
 
 ## Example Output
@@ -110,4 +110,4 @@ This is an educational awareness tool designed strictly to inspect plain URL tex
 This project is intended strictly for educational and defensive cybersecurity awareness. Use only the safe sample strings provided in this repository or synthetic test cases. Do not harvest credentials, do not attempt to deceive individuals, and never scan or probe external websites without explicit written authorization.
 
 ## Author
-Student Developer, Cybersecurity Mini Project, EWB Courses
+Mathias William (@mathiaswilliam761-ui), Cybersecurity Mini Project, EWB Courses
