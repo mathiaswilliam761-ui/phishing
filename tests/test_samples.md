@@ -26,3 +26,4 @@ Python version used: 3.13.14 | Operating system: Windows 11 | Date: 2026-11-06
 ## Notes
 - What I learned: A URL's text structure can reveal suspicious patterns before a browser ever connects. Attackers frequently leverage techniques like userinfo `@` obscuration, bare IP addresses, and deep subdomain stacking to deceive victims.
 - What surprised me: An absence of warnings never proves a website is legitimate (`https://secure-login.example.invalid` triggers 0 warnings despite being potentially malicious). Conversely, legitimate services sometimes trigger warnings (such as corporate internal IP addresses or CDN subdomains). URL inspection is an awareness aid, not an absolute guarantee of safety.
+

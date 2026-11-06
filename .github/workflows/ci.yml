@@ -40,3 +40,4 @@ jobs:
       run: |
         echo "https://www.example.com/login" | python phishing_checker.py || true
         echo "q" | python phishing_checker.py
+
